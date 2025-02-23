@@ -22,8 +22,7 @@ pipeline {
         docker { image 'mysql:latest' }
       }
       steps {
-        sh 'mysql -V'
-        sh 'SELECT CURRENT_TIMESTAMP() + 1;'
+        sh 'SHOW TABLES;'
       }
     }
   }
