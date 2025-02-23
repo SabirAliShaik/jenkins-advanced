@@ -23,6 +23,7 @@ pipeline {
       }
       steps {
         sh 'mysql -V'
+        sh 'SELECT CURRENT_TIMESTAMP() + 1;'
       }
     }
   }
